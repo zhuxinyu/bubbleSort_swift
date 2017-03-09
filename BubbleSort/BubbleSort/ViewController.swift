@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
 
     func bubbleSort(dataAry:Array<NSInteger>) {
-        var interstingAry = [dataAry]
+        var interestingAry = [dataAry]
         var caculator = 0
         var numberAry = dataAry
         let count:NSInteger = numberAry.count
@@ -41,10 +41,10 @@ class ViewController: UIViewController {
                     numberAry[j+1] = numberAry[j]
                     numberAry[j] = tempObj
                 }
-                interstingAry.append(numberAry)
+                interestingAry.append(numberAry)
             }
         }
-        self.sortingTextView.text = String(describing: interstingAry) + "\n" + "共计\(caculator)次"
+        self.sortingTextView.text = String(describing: interestingAry) + "\n" + "共计\(caculator)次"
     }
     
     
